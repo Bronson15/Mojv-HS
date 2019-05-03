@@ -20,7 +20,6 @@
   miscDivs,
   optionsdisableweather,
   weatherrefresh,
-  wlib,
   weather,
   optionsnooverlay,
   loadPage
@@ -63,9 +62,7 @@ action.setOverlay = function (img) { //apply overlay to screenoverlay
 
 action.isWeather = function (id) {
     var weather = [
-                    'temp', 
-                    'tempdeg', 
-                    'tempdegplus',  
+                    'temp',  
                     'rain', 
                     'update', 
                     'icon',
