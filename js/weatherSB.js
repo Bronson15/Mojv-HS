@@ -12,7 +12,7 @@
 
 var globalWeather,
     weatherdivs = function () { //weather
-    var weatherArray = ['temp', 'tempdeg', 'tempdegplus', 'rain', 'feelslike', 'feelslikedeg', 'update', 'icon', 'condition'],
+    var weatherArray = ['temp', 'tempdeg', 'tempdegplus', 'rain', 'update', 'icon', 'condition'],
         tcf = (weather.celsius === 'C') ? 'c' : 'f',
         i,
         div,
