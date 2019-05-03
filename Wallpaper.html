@@ -1,0 +1,42 @@
+<html id="html">
+
+<head>
+    <meta name="viewport" content="width=device-width, height=device-height initial-scale=1">
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body id="body">
+    <script type="text/javascript">
+      var injectedWeather = {},
+          appToOpen = null,
+          urlToOpen = null,
+          cycript = {},
+          options = {},
+          weather = {};
+    </script>
+    
+    <script type="text/javascript" src="js/legacyinfoSB.js"></script>
+
+    <div id="mainContainer" class="container">
+        <div id="screenElements"></div>
+    </div>
+
+<script>
+  //XenInfo
+  function mainUpdate(type) {
+    if (type == "weather") {
+        injectedWeather = weather;
+    } 
+  }
+</script>
+    <script type="text/javascript" src="LPP.js"></script>
+    <script type="text/javascript" src="js/setupSB.js"></script>
+    <script type="text/javascript" src="js/clock.js"></script>
+    <script type="text/javascript" src="js/mainSB.js"></script>
+    <script type="text/javascript" src="js/loaded.js"></script>
+    <script type="text/javascript" src="js/colorify.js"></script>
+</body>
+
+</html>
