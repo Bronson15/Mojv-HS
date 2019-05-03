@@ -1,35 +1,6 @@
 
 "use strict";
 
-action.searchGoogle = function(){
-    var google = prompt("What would you like to Google?");
-        google = encodeURIComponent(google);
-        google = "http://www.google.com/search?q=" + google;
-        if(google != null){
-            openURL(google);
-        }
-};
-
-/* when item is clicked */
-document.getElementById('screenElements').addEventListener('touchend', function (el) {
-    if (el.target.id.substring(0, 3) === 'app') {
-        appToOpen = document.getElementById(el.target.id).getAttribute('data-target');
-        webviewOpenApp();
-    } else if (el.target.id === 'unlock') {
-        webviewUnlock();
-    } else if (el.target.id === 'searchicon' || el.target.id === 'searchtext'){
-        action.searchGoogle();
-    }else if (el.target.id === 'flashlight'){
-        webviewFlashlight();
-    }else if (el.target.id === 'playmusic' || el.target.id === 'playmusichide'){
-        webviewPlayMusic();
-    }else if (el.target.id === 'nextmusic' || el.target.id === 'nextmusichide'){
-        webviewNextMusic();
-    }else if (el.target.id === 'prevmusic' || el.target.id === 'prevmusichide'){
-        webviewPrevMusic();
-    }
-});
-
 
 /* Overlay */
 
